@@ -1,6 +1,6 @@
+# A very simple Flask Hello World app for you to get started with...
 from flask import Flask
-app = Flask(_name_)
+app = Flask(__name__)
 @app.route('/')
-print("Hello from Flask! \n")
-print("\033[1m" + "Aluno: " "\033[0m" + "Thiago Odilon Mariano Da Silva")
-print("\033[1m" + "Prontuário: " "\033[0m" + "PT3019969")
+def hello_world():
+    return '<p>Hello from Flask!</p><table><tr><td><b>Aluno:</b></td><td>João Victor Silva Pereira</td></tr><tr><td><b>Prontuário:</b></td><td>PT3019837</td></tr></table>'
